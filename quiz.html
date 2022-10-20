@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "shortcut icon" href="images/marker.png">
+    <title>Ukraine's guide</title>
+    <link rel="stylesheet" href="styles.css">
+
+     <!--Fonts css--->
+     
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Bitter:wght@400;600&family=Montserrat:wght@400;600&family=Poppins:wght@200;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+      <!--JQuery css--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+     <!--Swiper css--->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    
+
+</head>
+<body style="opacity:0;transition:1s all;">
+  <div class="main_3page_wrapper">
+    <header>
+      <div class="header_content">
+        <img src="images/logo.png" alt="logo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About country</a></li>
+            <li><a href="discover.html">Discover Regions</a></li>
+            <li><a href="quiz.html" class="active">Quiz</a></li>
+            <li><a href="#">Useful links</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="page4">
+        <h1>Let's challenge yourself</h1>
+        <p>Take a short quiz dedicated to the most interesting places in Ukraine. At the end you will revarded with some bonus.</p>
+        <a href="#quiz_container">Start quiz</a>
+      </section>
+  </div>
+
+ 
+    <main>
+        <div id="quiz_container" class="quiz_container">
+            <p class="counter">Question 1/6</p>
+            <p class="quiz_question">Where should I find that place?</p>
+            <img src="images/Oblast/Crimea1.jpg">
+            <ul class="quiz_answers">
+             
+                <li id="first_q">
+                    <input id="answer1" type="radio" name="answer">
+                    <label id="q1" for="answer1">Lviv oblast</label>
+                </li>
+                <li id="second_q">
+                    <input id="answer2" type="radio" name="answer">
+                    <label id="q2" for="answer2">Lviv oblast</label>
+                </li>
+                <li id="third_q">
+                    <input id="answer3" type="radio" name="answer">
+                    <label id="q3" for="answer3">Lviv oblast</label>
+                 </li>
+               
+            </ul>
+            <button id="submit">Submit</button>
+            <button id="next">Next</button>
+            <p class="result"></p>
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer_wrapper">
+        <p>© Developed by Maryna Poliarush</p>
+      </div>
+      
+    </footer>
+  
+    <!--Swiper js--->
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="jquery.scrollTo.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
