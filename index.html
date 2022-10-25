@@ -12,23 +12,30 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-      <!--JQuery css--->
+     
+     <!--Icon--->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+     
+     <!--JQuery css--->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
      <!--Swiper css--->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
-    
+  <!--My JS--->
+    <script src="js.js"></script>
+
+     
 
 </head>
 <body style="opacity:0;transition:1s all;">
   <div class="main_page_wrapper">
     <header>
-      <div class="header_content">
+      <div class="header_content burger-header">
         <img src="images/logo.png" alt="logo">
-        <nav>
-          <ul>
+        <nav class="burger_nav">
+          <ul class="burger_ul">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About country</a></li>
             <li><a href="discover.html">Discover Regions</a></li>
@@ -36,6 +43,10 @@
             <li><a href="#">Useful links</a></li>
           </ul>
         </nav>
+      
+        <div id="burger" class="burger">
+          <iconify-icon inline icon="ci:hamburger" width="30" heigth="30"></iconify-icon>
+        </div>
       </div>
     </header>
 
@@ -51,7 +62,7 @@
        <div id="home_block1" class="home_block1">
         <img src="images/karpaty.jpg">
         <div class="home_block1_textblock">
-            <h5>Nature of uniqe region...</h5>
+            <h5>Nature of unique region...</h5>
             <hr>
             <p> It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit. — <br><b>Robert Louis Stevenson</b></p>
         </div>
@@ -94,6 +105,6 @@
     <!--Swiper js--->
     
     
-    <script src="js.js"></script>
+    
 </body>
 </html>

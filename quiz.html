@@ -21,16 +21,16 @@
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
-    
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
 
 </head>
 <body style="opacity:0;transition:1s all;">
   <div class="main_3page_wrapper">
     <header>
-      <div class="header_content">
+      <div class="header_content burger-header">
         <img src="images/logo.png" alt="logo">
-        <nav>
-          <ul>
+        <nav class="burger_nav">
+          <ul class="burger_ul">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About country</a></li>
             <li><a href="discover.html">Discover Regions</a></li>
@@ -38,6 +38,9 @@
             <li><a href="#">Useful links</a></li>
           </ul>
         </nav>
+        <div id ="burger" class="burger">
+          <iconify-icon inline icon="ci:hamburger" width="30" heigth="30"></iconify-icon>
+        </div>
       </div>
     </header>
     
@@ -51,30 +54,115 @@
  
     <main>
         <div id="quiz_container" class="quiz_container">
+          <div class="left_block">
             <p class="counter">Question 1/6</p>
-            <p class="quiz_question">Where should I find that place?</p>
+            <p class="quiz_question">Where is that place located?</p>
             <img src="images/Oblast/Crimea1.jpg">
-            <ul class="quiz_answers">
-             
-                <li id="first_q">
-                    <input id="answer1" type="radio" name="answer">
-                    <label id="q1" for="answer1">Lviv oblast</label>
-                </li>
-                <li id="second_q">
-                    <input id="answer2" type="radio" name="answer">
-                    <label id="q2" for="answer2">Lviv oblast</label>
-                </li>
-                <li id="third_q">
-                    <input id="answer3" type="radio" name="answer">
-                    <label id="q3" for="answer3">Lviv oblast</label>
-                 </li>
-               
-            </ul>
-            <button id="submit">Submit</button>
-            <button id="next">Next</button>
-            <p class="result"></p>
+          </div>
+            
+          <div class="right_block">
+            <div class="right_block_container">
+              <ul class="quiz_answers">
+                  <li id="first_q">
+                      <input id="answer1" type="radio" name="answer">
+                      <label id="q1" for="answer1">Lviv oblast</label>
+                  </li>
+                  <li id="second_q">
+                      <input id="answer2" type="radio" name="answer">
+                      <label id="q2" for="answer2">Lviv oblast</label>
+                  </li>
+                  <li id="third_q">
+                      <input id="answer3" type="radio" name="answer">
+                      <label id="q3" for="answer3">Lviv oblast</label>
+                  </li>
+              </ul>
+              <button id="submit">Submit</button>
+              <button id="next">Next</button>
+              <p class="result"></p>
+              <button id="more">See more places</button>
+            </div>
+          </div>
         </div>
+
+        <div id="bonus" class="oblast_block_info quizBonus" >
+          <h3>Bonus locations</h3>
+          <hr>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="style_div"></div>
+           <div class="swiper-wrapper">
+              <!-- Slides -->
+              
+              <div class="swiper-slide">
+               
+                <div class="swiper-slide-wrapper">
+                  <div class="slider_content_block slider_content_block">
+                    
+                    <div class="slider_content_text">
+                      <h4>Valley of the Daffodils</h4>
+                      <p>Every year, with the arrival of spring, hundreds of tourists from all over Ukraine do not miss the opportunity Enjoy the blossom of snow-white flowers.The best way to visit it is to choose tours and go on holiday to the Valley of daffodils in mid-May.
+                      </p>
+                      <div class="span_block">
+                        <span>Geolocation <a href="https://goo.gl/maps/d1NyE5GmCM7fcST4A" target="_blank"><img class="icon" src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/40/000000/external-location-user-interface-icongeek26-linear-colour-icongeek26.png"/></a></span>
+                       
+                    </div>
+                    </div>       
+                    <img src="images/Oblast/nartsysy.jpeg"> 
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="swiper-slide-wrapper">
+                  <div class="slider_content_block">
+                    <div class="slider_content_text">
+                      <h4>Kherson Grand Stanislav Canyon</h4>
+                      <p>One of the most amazing and beautiful places in Ukraine. Vertical slopes of canyon consisting of multi-coloured clay and they reach up to 55 meters in height.
+                      </p>
+                      <div class="span_block">
+                        <span>Geolocation <a href="https://goo.gl/maps/ri5EoP81HV4USBs88" target="_blank"><img class="icon" src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/40/000000/external-location-user-interface-icongeek26-linear-colour-icongeek26.png"/></a></span>
+                     
+                    </div>
+                    </div> 
+                    <img src="images/Oblast/kherson3.jpg">       
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="swiper-slide-wrapper">
+                  <div class="slider_content_block">
+                    <div class="slider_content_text">
+                      <h4>Visiting Thermal Waters Kosino </h4>
+                      <p>The facility is actively used by the local population for recreational purposes.Complex is built on the underground thermal water source which enriches most of the pools of the complex with healing properties and many Ukrainians and Hungarians come here to mix pleasure with medical treatment.</p>
+                      <div class="span_block">
+                        <span>Geolocation <a href="https://goo.gl/maps/aYGMRDZRTVBaV7jb7" target="_blank"><img class="icon" src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/40/000000/external-location-user-interface-icongeek26-linear-colour-icongeek26.png"/></a></span>
+                       
+                      </div>
+                    </div> 
+                    <img src="images/Oblast/kosyno.jpg">       
+                  </div>
+                </div>
+              </div>
+              
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        
+        
     </main>
+
+    
 
     <footer>
       <div class="footer_wrapper">
@@ -86,7 +174,7 @@
     <!--Swiper js--->
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="jquery.scrollTo.min.js"></script>
+    
     <script src="js.js"></script>
 </body>
 </html>

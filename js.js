@@ -1,10 +1,46 @@
 
   $(document).ready(function() {    
     $("body").css("opacity", "1");
+
+
+    // Burger handler ////////////////////////
+    let cliked=true;
+
+    $("#burger").click(function(){
+      if(!cliked){
+
+          cliked=true;
+          $(".burger_ul").css('display','none')
+          $('.first_page').css('display','block')
+          $('.page2').css('display','block')
+          $('.text_oblast_container').css('display','flex')
+          $('.page4').css('display','block')
+         
+
+      } else if(cliked){
+        
+         
+          $('.burger_ul').css('visibility','visible')
+       
+          $('.burger_ul').css('display','block')
+          $('.burger_ul li').css('margin-bottom','30px')
+          $('.burger_ul li a').css('font-size','20px')
+          $('.burger_ul li a').css('line-height','20px')
+          $('.burger_ul li').css('margin-top','20px')
+          
+          $('.first_page').css('display','none')
+          $('.page2').css('display','none')
+          $('.text_oblast_container').css('display','none')
+          $('.page4').css('display','none')
+          cliked=false;
+          console.log(cliked)
+      }
+
+    });
+
   });
 
-
-
+  
 
 
 
@@ -40,6 +76,10 @@
 
 // responsive block for text hovering
 
+let windowWidth = $(window).width();
+
+
+if(windowWidth>992){
   $('.text_oblast_container ul li a').mouseover(function(){
     let idHoveredTextOn = $(this).attr('id');
     let idOblast = $(`.map_ukraine #${idHoveredTextOn}`);
@@ -62,9 +102,7 @@
   })
 
 
-
-
-
+} 
 
 // Text click handler
 
@@ -300,7 +338,9 @@ function answerChecking(){
       $('#next').css('display','none')
       $('.counter').text(``)
       $('#submit').css('display','none')
-      $('.result').text("Perfect! You an expert in Ukraine!").css('color','#4af517')
+      $('.result').text("Perfect! You an expert in Ukraine! Now more places are available for you.").css('color','#4af517')
+      $('#more').css('display','block')
+      
     }
     
     
@@ -312,25 +352,35 @@ answerChecking()
   
 
 function nextHandler(){
-  
   document.getElementById('next').addEventListener('click',function(event){
     event.preventDefault();
-    counter++
-    
-
-    $('label').css('color','black')
+    counter++;
+    $('label').css('color','black');
     $('input').prop('checked', false); 
 
     if(counter<6){
       questionCreator();
-    
       answersCteator();
-      $('#next').css('display','none')
-    
+      $('#next').css('display','none');
       answerChecking();
     } 
-    
-})
+  })
 }
 nextHandler()
+
+
+
+
+function moreHandler(){
+  
+  document.getElementById('more').addEventListener('click',function(event){
+    event.preventDefault();
+
+    $('.quizBonus').css('visibility','visible')
+    let bonusAmount = $('.quizBonus').offset().top;
+    $('html').scrollTop(bonusAmount)
+
+  })
+}
+moreHandler()
 
