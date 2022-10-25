@@ -1022,7 +1022,9 @@ margin-bottom: 5%;
     
 }
 
-
+.quizBonus{
+    visibility: hidden;
+  }
 
 }
 
@@ -2048,6 +2050,9 @@ font-size: 15px;
 align-items: center;
 
 }
+.quizBonus{
+    visibility: hidden;
+  }
 
 }
 
