@@ -117,11 +117,11 @@
     font-family: 'Merriweathe', sans-serif;
     font-style: normal;
       font-weight: 400;
-      font-size: 1.4rem;
+      font-size: 2vw;
       line-height:6vw;
-      text-align: left;
-      margin-bottom: 15px;
-      align-items: center;
+      text-align: center;
+    padding: 20px 0;
+      
 }
     
    .burger{
@@ -1141,10 +1141,10 @@ footer{
 font-family: 'Merriweathe', sans-serif;
 font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5vw;
   line-height:6vw;
-  text-align: left;
-  align-items: center;
+  text-align: center;
+  
 }
 .footer_wrapper{
     max-width: 1200px;
@@ -2153,7 +2153,16 @@ text-align: justify;
       width: 100%;
     }
 
-
+    .footer_wrapper p{
+        font-family: 'Merriweathe', sans-serif;
+        font-style: normal;
+          font-weight: 400;
+          font-size: 3vw;
+          line-height:6vw;
+          text-align: center;
+        padding: 20px 0;
+          
+    }
 
 .page2{
     max-width: 80%;
