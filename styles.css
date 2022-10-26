@@ -774,9 +774,8 @@ font-size: 2vw;
         font-style: normal;
     font-weight: 400;
     font-size: 1.5vw;
-    align-items: center;
+    
     display: block;
-    margin: 0x auto;
     text-align: center;
    
     }
@@ -2393,7 +2392,7 @@ margin: 5% auto;
 .slider_content_text span {
 width: 30%;
 display: inline;
-margin: 10px auto;
+
 text-align: center;
 font-size: 3vw;
 
