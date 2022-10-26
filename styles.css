@@ -56,12 +56,12 @@
     }
 
     nav{
-       
+       width: 70%;
         margin: 0 auto;
     }
     
     nav ul{
-        width:inherit;
+       
         display: flex;
         flex: 1;
         justify-content: space-between;
@@ -1095,12 +1095,12 @@ header img{
 }
 
 nav{
-    max-width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
 nav ul{
-    width:inherit;
+   
     display: flex;
     flex: 1;
     justify-content: space-between;
