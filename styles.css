@@ -7,7 +7,7 @@
 }
 
 
-    
+
 
 
 @media screen and (max-width:992px ){
@@ -1096,7 +1096,7 @@ header img{
 
 nav{
     width: 60%;
-    margin: 0 auto;
+   
 }
 
 nav ul{
@@ -1135,7 +1135,7 @@ nav ul li:hover{
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 footer{
@@ -1165,7 +1165,7 @@ font-style: normal;
 }
 
 .footer_wrapper>ul{
-    width:50%;
+    width:15%;
     margin: 20px auto;
     font-size: 1.2vw;
 }
@@ -1660,6 +1660,10 @@ width: 400px;
     stroke-width: 1px;
 }
 
+.oblast:hover{
+    cursor: pointer;
+}
+
 
 
 .text_oblast_container{
@@ -1679,6 +1683,10 @@ width: 400px;
     color: white;
 }
 
+.first_oblast_section ul li a:hover{
+    cursor: pointer;
+}
+
 .second_oblast_section{
     width: 190px;
 
@@ -1691,6 +1699,10 @@ width: 400px;
     font-size: 20px;
     color: white;
     text-align: right;
+}
+
+.second_oblast_section ul li a:hover{
+    cursor: pointer;
 }
 
 .oblast_block{
@@ -1844,12 +1856,15 @@ align-items: center;
     width: 100px;
     text-align: center;
    position: fixed;
-   top:590px;
+   bottom:50px;
    right: 50px;
     z-index: 2;
     opacity: 0.4;
 }
 
+.back_btn:hover{
+    cursor: pointer;
+}
 .back_btn img{
     width: 50px;
 }
