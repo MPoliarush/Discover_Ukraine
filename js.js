@@ -41,14 +41,6 @@
   });
 
   
-// downloading images before rendering
-let bgImg = new Image();
-bgImg.src = 'images/pole3.jpg';
-const background3 = document.querySelector('.main3_page_wrapper')
-bgImg.onload = ()=>{
-  console.log('logged')
-  background3.style.backgroundImage = `url('images/pole3.jpg')`
-}
 
 // responsive block for oblast hovering
 
