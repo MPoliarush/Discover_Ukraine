@@ -619,6 +619,7 @@ font-size: 2vw;
         max-width: 100%;
         background-color: #87a2a4;
         background-blend-mode: multiply;
+        background-image: url(images/pole3.jpg);
         height: 100vh;
         
         /* padding-bottom: 130px;
@@ -1689,6 +1690,7 @@ width: 400px;
     max-width: 100%;
     background-color: #5e6e6f;
     background-blend-mode: multiply;
+    background-image: url(images/pole3.jpg);
     height: 100vh;
     
     /* padding-bottom: 130px;
