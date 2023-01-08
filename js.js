@@ -41,8 +41,14 @@
   });
 
   
-
-
+// downloading images before rendering
+let bgImg = new Image();
+bgImg.src = 'images/pole3.jpg';
+const background3 = document.querySelector('.main3_page_wrapper')
+bgImg.onload = ()=>{
+  console.log('logged')
+  background3.style.backgroundImage = `url('images/pole3.jpg')`
+}
 
 // responsive block for oblast hovering
 
@@ -369,18 +375,19 @@ function nextHandler(){
 nextHandler()
 
 
-
+$('#bonus').hide()
 
 function moreHandler(){
   
   document.getElementById('more').addEventListener('click',function(event){
     event.preventDefault();
 
-    $('.quizBonus').css('visibility','visible')
+    $('.quizBonus').show();
     let bonusAmount = $('.quizBonus').offset().top;
     $('html').scrollTop(bonusAmount)
 
   })
 }
 moreHandler()
+
 
