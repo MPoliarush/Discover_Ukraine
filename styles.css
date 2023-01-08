@@ -7,7 +7,21 @@
 }
 
 
+body{
+    animation: bodyStart 1s ease;
+    opacity: 1;
+   
+}
 
+@keyframes bodyStart{
+
+   0%{
+    opacity: 0;
+   }
+   100%{
+    opacity: 1;
+   }
+}
 
 
 @media screen and (max-width:992px ){
@@ -151,8 +165,9 @@ font-size: 2vw;
     
     .main_page_wrapper{
         width: 100%;
+        background-color: #87a2a4;
+        background-blend-mode: multiply;
         background-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
         url(images/synevyr.jpg);
         height: 100vh;
         background-size: cover;
@@ -215,6 +230,17 @@ font-size: 2vw;
       color: aliceblue;
       border-radius: 10px;
       margin: 5px auto ;
+      animation:buttonPulse 2s infinite;
+      box-shadow: none;
+      }
+
+      @keyframes  buttonPulse{
+        0%,100%{
+            
+        }
+        50%{
+            box-shadow:  0px 2px 26px 8px rgba(135,194,142,0.69);
+        }
       }
     
     
@@ -401,8 +427,9 @@ font-size: 2vw;
     
     .main_2page_wrapper{
         max-width: 100%;
+        background-color: #87a2a4;
+        background-blend-mode: multiply;
         background-image:
-        
         url(images/pole2.jpg);
         height: 100vh;
         
@@ -451,7 +478,7 @@ font-size: 2vw;
       line-height: 4vw;
       text-align: center;
       color: white;
-      margin: 15px auto 40px;
+      margin: 15px auto 20px;
       width: 70%;
       
       
@@ -473,9 +500,18 @@ font-size: 2vw;
       color: aliceblue;
       border-radius: 10px;
       margin: 5px auto ;
-    
+      animation: buttonPulse infinite 3s;
+      box-shadow: 1px;
       }
     
+      @keyframes  buttonPulse{
+        0%,100%{
+            
+        }
+        50%{
+            box-shadow:  0px 2px 26px 8px rgba(135,194,142,0.69);
+        }
+      }
     
     #second_page_main{
         max-width: 100%;
@@ -581,10 +617,9 @@ font-size: 2vw;
     
     .main3_page_wrapper{
         max-width: 100%;
-        background-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)),
-        url(images/pole3.jpg);
-       height: 100vh;
+        background-color: #87a2a4;
+        background-blend-mode: multiply;
+        height: 100vh;
         
         /* padding-bottom: 130px;
         background-repeat: no-repeat;
@@ -835,10 +870,11 @@ font-size: 3vw;
     
     .main_3page_wrapper{
         max-width: 100%;
+        background-color: #87a2a4;
+        background-blend-mode: multiply;
         background-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)),
         url(images/kyiv.webp);
-        background-color: #aba931;
+       
        height: 100vh;
        background-repeat: no-repeat;
        background-size: cover;
@@ -894,7 +930,17 @@ font-size: 3vw;
       color: aliceblue;
       border-radius: 10px;
       margin: 5px auto ;
+      animation: buttonPulse infinite 3s;
+      box-shadow: 1px;
+      }
     
+      @keyframes  buttonPulse{
+        0%,100%{
+            
+        }
+        50%{
+            box-shadow:  0px 2px 26px 8px rgba(135,194,142,0.69);
+        }
       }
     
       .quiz_container{
@@ -1180,8 +1226,9 @@ font-size: 1.1vw;
 
 .main_page_wrapper{
     width: 100%;
+    background-color: #87a2a4;
+    background-blend-mode: multiply;
     background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
 	url(images/synevyr.jpg);
     height: 100vh;
     background-size: cover;
@@ -1197,6 +1244,7 @@ font-size: 1.1vw;
  
     max-width: 800px;
     margin: 12vh auto;
+    height: 30%;
     background-color: rgba(51, 75, 51, 0.3);
     padding: 50px 0;
     box-shadow: 0px 1px 23px -2px rgba(0,0,0,0.9);
@@ -1241,10 +1289,21 @@ font-size: 1.1vw;
   text-align: left;
   background-color: rgba(74, 245, 23, 0.9);
   border:none;
-  text-decoration: none;
+  text-decoration: 1px;
   color: aliceblue;
   border-radius: 10px;
   margin: 5px auto ;
+  animation: buttonPulse infinite 3s;
+  box-shadow: 1px;
+  }
+
+  @keyframes  buttonPulse{
+    0%,100%{
+        
+    }
+    50%{
+        box-shadow:  0px 2px 26px 8px rgba(135,194,142,0.69);
+    }
   }
 
 
@@ -1438,8 +1497,9 @@ padding-bottom: 20px;
 
 .main_2page_wrapper{
     max-width: 100%;
+    background-color: #87a2a4;
+    background-blend-mode: multiply;
     background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)),
 	url(images/pole2.jpg);
     height: 100vh;
     
@@ -1511,6 +1571,17 @@ padding-bottom: 20px;
   color: aliceblue;
   border-radius: 10px;
   margin: 5px auto ;
+  animation: buttonPulse infinite 3s;
+  box-shadow: 1px;
+  }
+
+  @keyframes  buttonPulse{
+    0%,100%{
+        
+    }
+    50%{
+        box-shadow:  0px 2px 26px 8px rgba(135,194,142,0.69);
+    }
   }
 
 
@@ -1616,10 +1687,9 @@ width: 400px;
 
 .main3_page_wrapper{
     max-width: 100%;
-    background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)),
-	url(images/pole3.jpg);
-   height: 100vh;
+    background-color: #5e6e6f;
+    background-blend-mode: multiply;
+    height: 100vh;
     
     /* padding-bottom: 130px;
     background-repeat: no-repeat;
@@ -1887,10 +1957,10 @@ align-items: center;
 
 .main_3page_wrapper{
     max-width: 100%;
+    background-color: #87a2a4;
+    background-blend-mode: multiply;
     background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)),
 	url(images/kyiv.webp);
-    background-color: #aba931;
    height: 100vh;
    background-repeat: no-repeat;
    background-size: cover;
@@ -1948,8 +2018,18 @@ align-items: center;
   color: rgb(253, 255, 240);
   border-radius: 10px;
   margin: 5px auto ;
+  animation: buttonPulse infinite 3s;
+  box-shadow: 1px;
   }
 
+  @keyframes  buttonPulse{
+    0%,100%{
+        
+    }
+    50%{
+        box-shadow:  0px 2px 26px 8px rgba(135,194,142,0.69);
+    }
+  }
   .quiz_container{
     max-width: 800px;
     height: 400px;
@@ -2145,7 +2225,7 @@ align-items: center;
          
         font-size: 3.5vw;
     line-height: 4vw;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 80%;
     
     }
