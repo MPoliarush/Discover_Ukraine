@@ -170,7 +170,7 @@ font-size: 2vw;
         background-blend-mode: multiply;
         background-image:
         url(images/synevyr.jpg);
-        height: 100vh;
+       padding-bottom: 50px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -432,8 +432,8 @@ font-size: 2vw;
         background-blend-mode: multiply;
         background-image:
         url(images/pole2.jpg);
-        height: 100vh;
-        
+        padding-bottom: 50px;
+        height: 600px;
         /* padding-bottom: 130px;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -453,9 +453,9 @@ font-size: 2vw;
     .page2{
      
         max-width: 80%;
-        margin: 12vh auto;
+        margin:12% auto;
         background-color: rgba(51, 75, 51, 0.3);
-        padding: 10px 10px;
+        padding: 30px 10px;
         box-shadow: 0px 1px 23px -2px rgba(0,0,0,0.7);
       }
       
@@ -621,8 +621,8 @@ font-size: 2vw;
         background-color: #87a2a4;
         background-blend-mode: multiply;
         background-image: url(images/pole3.jpg);
-        height: 100vh;
-        
+        padding-bottom: 150px;
+        height: 500px;
         /* padding-bottom: 130px;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -652,6 +652,7 @@ font-size: 2vw;
         justify-content: space-between;
         padding: 0 20px;
     }
+
     .first_oblast_section{
         width:50%;
     }
@@ -876,8 +877,8 @@ font-size: 3vw;
         background-blend-mode: multiply;
         background-image:
         url(images/kyiv.webp);
-       
-       height: 100vh;
+       height: 500px;
+       padding-bottom: 100px;
        background-repeat: no-repeat;
        background-size: cover;
        background-position: center;}
@@ -911,7 +912,7 @@ font-size: 3vw;
         text-align: center;
         color: white;
         margin: 15px auto 40px;
-        width: 50%;
+       
       
       
       }
@@ -1233,7 +1234,7 @@ font-size: 1.1vw;
     background-blend-mode: multiply;
     background-image:
 	url(images/synevyr.jpg);
-    height: 100vh;
+    padding-bottom: 100px;
     background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;
@@ -1246,10 +1247,9 @@ font-size: 1.1vw;
 .first_page{
  
     max-width: 800px;
-    margin: 12vh auto;
-    height: 30%;
+    margin: 5% auto;
     background-color: rgba(51, 75, 51, 0.3);
-    padding: 50px 0;
+    padding: 20px 0 ;
     box-shadow: 0px 1px 23px -2px rgba(0,0,0,0.9);
   }
   
@@ -1485,7 +1485,7 @@ font-style: normal;
     font-family: 'Open Sans', sans-serif;
 font-style: normal;
 font-weight: 300;
-font-size: 1.8vw;
+font-size: 1.6vw;
   line-height: 3vw;
 text-align: left;
 margin-top: 20px;
@@ -1504,7 +1504,7 @@ padding-bottom: 20px;
     background-blend-mode: multiply;
     background-image:
 	url(images/pole2.jpg);
-    height: 100vh;
+    
     
     /* padding-bottom: 130px;
     background-repeat: no-repeat;
@@ -1517,7 +1517,7 @@ padding-bottom: 20px;
     background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;
-  
+    padding-bottom: 100px;
 	margin: 0 auto;
 }
 
@@ -1525,7 +1525,7 @@ padding-bottom: 20px;
 .page2{
  
     max-width: 800px;
-    margin: 12vh auto;
+    margin: 5% auto;
     background-color: rgba(51, 75, 51, 0.3);
     padding: 50px 20px;
     box-shadow: 0px 1px 23px -2px rgba(0,0,0,0.7);
@@ -1693,7 +1693,7 @@ width: 400px;
     background-color: #5e6e6f;
     background-blend-mode: multiply;
     background-image: url(images/pole3.jpg);
-    height: 100vh;
+   padding-bottom: 100px;
     
     /* padding-bottom: 130px;
     background-repeat: no-repeat;
@@ -1966,7 +1966,7 @@ align-items: center;
     background-blend-mode: multiply;
     background-image:
 	url(images/kyiv.webp);
-   height: 100vh;
+   padding-bottom: 100px;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;}
@@ -1974,7 +1974,7 @@ align-items: center;
    .page4{
  
     max-width: 800px;
-    margin: 12vh auto;
+    margin: 5% auto;
     background-color: rgba(51, 75, 51, 0.5);
     padding: 50px 20px;
     box-shadow: 0px 1px 23px -2px rgba(0,0,0,0.7);
@@ -2214,7 +2214,7 @@ align-items: center;
      
     .main_page_wrapper{
       
-        height: 100vh;
+       height: 500px;
         
     }
 
@@ -2405,12 +2405,6 @@ width: 90%;
 }
 
 
-.text_oblast_container{
-    height: 100vh;
-  
-}
-
-
 .oblast_block_info h3{
     padding: 0;
     font-size: 8vw;
@@ -2442,7 +2436,7 @@ width: 90%;
 }
 
 .second_oblast_section {
-    height: 90vh;
+   
     margin-bottom:0px;
 }
 
